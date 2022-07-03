@@ -102,9 +102,9 @@ function doPost(e) {
       
 //      sendText(id, "Data anda adalah \n"+inputData.join("\n"));
     } else if (text.toLowerCase().startsWith("/total")){
-      var textData = text.split("/total ");
+      var textData = text.split("/total");
       textData.shift();
-      var inputData = textData.join("").split(" ");
+      var inputData = textData.join("").trim().split(" ");
       Logger.log(inputData);
       var tgl = inputData[0];
 //      Logger.log(tgl);
